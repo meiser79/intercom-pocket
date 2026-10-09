@@ -19,7 +19,7 @@ final class Discovery {
     void start(){
         if(multicast!=null){multicast.setReferenceCounted(false);multicast.acquire();}
         NsdServiceInfo info=new NsdServiceInfo();info.setServiceType("_kiosk-satellite._tcp.");info.setServiceName("ks-"+engine.config.id());info.setPort(2324);
-        info.setAttribute("id",engine.config.id());info.setAttribute("name",engine.config.name());info.setAttribute("version","2026.9.78-pocket.1");info.setAttribute("port","2324");
+        info.setAttribute("id",engine.config.id());info.setAttribute("name",engine.config.name());info.setAttribute("version","2026.10.17-pocket.1");info.setAttribute("port","2324");
         registration=new NsdManager.RegistrationListener(){public void onRegistrationFailed(NsdServiceInfo i,int e){engine.detail="Automatische Sichtbarkeit fehlgeschlagen. App neu starten.";engine.changed();}public void onUnregistrationFailed(NsdServiceInfo i,int e){}public void onServiceRegistered(NsdServiceInfo i){}public void onServiceUnregistered(NsdServiceInfo i){}};
         nsd.registerService(info,NsdManager.PROTOCOL_DNS_SD,registration);
         discovery=new NsdManager.DiscoveryListener(){public void onDiscoveryStarted(String s){}public void onDiscoveryStopped(String s){}public void onStartDiscoveryFailed(String s,int e){engine.detail="Gerätesuche nicht verfügbar. Kiosk manuell hinzufügen.";engine.changed();}public void onStopDiscoveryFailed(String s,int e){}public void onServiceLost(NsdServiceInfo i){}public void onServiceFound(NsdServiceInfo i){if(!i.getServiceName().equals("ks-"+engine.config.id()))enqueue(i);}};

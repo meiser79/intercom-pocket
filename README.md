@@ -1,4 +1,4 @@
-# Intercom Satelite
+# Intercom Satellite
 
 Unofficial Android companion for [Kiosk Satellite](https://github.com/jxlarrea/kiosk-satellite). Install a signed APK on Android 12 or later, enter the same Intercom key as your kiosks, and enable the app's phone account to receive calls in the system Phone app. The package ID is unchanged from Intercom Pocket; updates must be signed with the original signing certificate.
 

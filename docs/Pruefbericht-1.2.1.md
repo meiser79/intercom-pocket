@@ -1,4 +1,4 @@
-# Intercom Satelite 1.2.1 – Prüfbericht
+# Intercom Satellite 1.2.1 – Prüfbericht
 
 Die Oberfläche zeigt Anrufdetails nicht mehr an. Einstellungen und Anrufverlauf sind eigene Seiten; die laufende Anrufansicht zeigt Gesprächspartner, Status, Dauer und Sprachpegel in einer übersichtlichen Karte.
 

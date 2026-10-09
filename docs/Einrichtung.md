@@ -10,7 +10,7 @@ INTERCOM SATELITE 1.3.0 – Einrichtung auf deinem Samsung A56
 
 5. Ab Version 1.3.0 öffnet „Durchsage starten …“ die Auswahl: alle verfügbaren Kiosks, einzelne Kiosks oder eine gespeicherte Raumgruppe. Unter „Raumgruppen verwalten“ auf der Startseite legst du Gruppen mit 1–32 bereits verbundenen Kiosks an und kannst sie bearbeiten oder löschen. Die Durchsage zeigt je Raum, ob er verbunden, nicht erreichbar oder abgelehnt ist. Nicht erreichbare Gruppenmitglieder werden übersprungen; eine leere Auswahl ruft niemals automatisch alle an. Die Sprechtaste hält das Mikrofon zunächst stumm. Ein abgelehnter oder ausgefallener Kiosk beendet die anderen Verbindungen nicht.
 
-6. Für ein Widget auf dem Startbildschirm erst einen Kiosk mit der App verbinden. Dann das Widget „Intercom Satelite“ hinzufügen und sein Ziel auswählen. Ein Tipp öffnet die App, prüft den Kiosk erneut und ruft ihn an.
+6. Für ein Widget auf dem Startbildschirm erst einen Kiosk mit der App verbinden. Dann das Widget „Intercom Satellite“ hinzufügen und sein Ziel auswählen. Ein Tipp öffnet die App, prüft den Kiosk erneut und ruft ihn an.
 
 7. Optional in den Einstellungen: automatischen Empfang nach Neustart, Ruhezeiten mit Wochentagen und Ausnahmen, Design und Akzentfarbe wählen. Den Anrufverlauf erreichst du auf der Startseite. Raumnamen, Symbole und Favoriten bearbeitest du durch langes Drücken eines Kiosks.
 

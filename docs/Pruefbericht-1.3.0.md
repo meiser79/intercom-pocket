@@ -1,4 +1,4 @@
-# Intercom Satelite 1.3.0 – Prüfbericht
+# Intercom Satellite 1.3.0 – Prüfbericht
 
 Stand: 28.09.2026. Vorbereitung einer neuen Version; keine signierte Veröffentlichung.
 
@@ -42,6 +42,6 @@ Paket-ID unverändert; Versionscode 6, Versionsname 1.3.0. Ein Update der vorhan
 
 ## Separate lokale Test-APK
 
-Für einen Test ohne den bislang nicht verfügbaren ursprünglichen Signaturschlüssel wurde außerhalb dieses Repositorys eine separate APK gebaut: Paket-ID `de.local.intercompocket.preview`, Versionsname `1.3.0-preview`, Beschriftung „Intercom Satelite Test“. Die Anwendungslogik entspricht dem Feature-Commit `fb223a2201c09a1ca538d665bd26ea2e67f80702`; nur Paket-ID, Versionsname und Manifest-Beschriftung wurden angepasst.
+Für einen Test ohne den bislang nicht verfügbaren ursprünglichen Signaturschlüssel wurde außerhalb dieses Repositorys eine separate APK gebaut: Paket-ID `de.local.intercompocket.preview`, Versionsname `1.3.0-preview`, Beschriftung „Intercom Satellite Test“. Die Anwendungslogik entspricht dem Feature-Commit `fb223a2201c09a1ca538d665bd26ea2e67f80702`; nur Paket-ID, Versionsname und Manifest-Beschriftung wurden angepasst.
 
 Die Test-APK wurde mit einem neuen privaten Schlüssel signiert, die Signatur geprüft und die Installation samt Start neben dem ursprünglichen Paket im Emulator bestätigt. Der Schlüssel wurde separat lokal gesichert und nicht im Repository abgelegt. Die Test-App hat eigene Einstellungen. Vor Aktivierung ihres Empfangs muss der Empfang der bisherigen App ausgeschaltet werden, da beide dieselben Ports verwenden. Diese APK ist kein Update für die bisherige Installation und wurde nicht als reguläres GitHub-Release veröffentlicht.

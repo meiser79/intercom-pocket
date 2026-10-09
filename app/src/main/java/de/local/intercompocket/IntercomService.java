@@ -60,7 +60,7 @@ public final class IntercomService extends Service {
     private Notification ongoing(String text){
         PendingIntent open=PendingIntent.getActivity(this,0,new Intent(this,MainActivity.class),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
         PendingIntent stop=PendingIntent.getService(this,10,new Intent(this,IntercomService.class).setAction(STOP),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
-        return new Notification.Builder(this,"active").setSmallIcon(R.drawable.ic_notification).setContentTitle("Intercom Satelite").setContentText(text).setContentIntent(open).setOngoing(true).addAction(new Notification.Action.Builder(null,"Ausschalten",stop).build()).build();
+        return new Notification.Builder(this,"active").setSmallIcon(R.drawable.ic_notification).setContentTitle("Intercom Satellite").setContentText(text).setContentIntent(open).setOngoing(true).addAction(new Notification.Action.Builder(null,"Ausschalten",stop).build()).build();
     }
     void update(){
         if(instance!=this)return;Engine e=engine;if(e==null)return;

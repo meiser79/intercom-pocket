@@ -57,8 +57,8 @@ final class Engine implements IntercomServer.Listener {
     void changed(){observer.changed();}
     boolean active(){return !state.equals("idle");}
     int port(){return config.tls()?2325:2324;}
-    public JSONObject identity(){return Wire.obj("id",config.id(),"name",config.name(),"version","2026.9.78-pocket.1","enabled",running&&!config.key().isEmpty(),"key",Wire.fingerprint(config.key()),"dnd",config.advertisedDnd(),"endpoint",Wire.obj("port",port(),"tls",config.tls()));}
-    private JSONObject self(){return Wire.obj("id",config.id(),"name",config.name(),"address",Discovery.localIp(),"port",port(),"version","2026.9.78-pocket.1","tls",config.tls());}
+    public JSONObject identity(){return Wire.obj("id",config.id(),"name",config.name(),"version","2026.10.17-pocket.1","enabled",running&&!config.key().isEmpty(),"key",Wire.fingerprint(config.key()),"dnd",config.advertisedDnd(),"endpoint",Wire.obj("port",port(),"tls",config.tls()));}
+    private JSONObject self(){return Wire.obj("id",config.id(),"name",config.name(),"address",Discovery.localIp(),"port",port(),"version","2026.10.17-pocket.1","tls",config.tls());}
     void found(Peer p){if(config.id().equals(p.id))return;peers.compute(p.addressKey(),(k,old)->old==null?p:old);io.execute(()->probe(peers.get(p.addressKey())));}
     void add(String address) throws Exception {
         HttpUrl url=HttpUrl.parse(address.contains("://")?address:"http://"+address);

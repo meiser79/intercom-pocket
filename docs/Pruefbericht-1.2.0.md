@@ -1,4 +1,4 @@
-Intercom Satelite 1.2.0 – Prüfbericht
+Intercom Satellite 1.2.0 – Prüfbericht
 
 31 JVM-Tests bestanden, 0 Fehlschläge. Darunter reale lokale HTTP/WebSocket-Übergänge, Telefon-Sitzung, Ruhezeit-Grenzen und Durchsage bei Ablehnung eines Kiosks.
 Android Lint: 0 Fehler, 20 Warnungen. Release-Build erfolgreich.
